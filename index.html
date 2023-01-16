@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="sort plice">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <main>
+    <form>
+      <select id="select">
+        <!-- mobile -->
+        <!-- <option value="null" disabled>sort by:</option> -->
+        <option value="price" id="price">sort by price</option>
+        <option value="name" id="name">sort by name</option>
+        <option value="relevance" id="relevance">sort by relevance</option>
+        <div class="arrow"></div>
+      </select>
+      <!-- desktop -->
+      <div class="tabs">
+        <button type="button" id="btn-price" class="active" value="price">sort by price</button>
+        <button type="button" id="btn-name" value="name">sort by name</button>
+        <button type="button" id="btn-relevance" value="relevance">sort by relevance</button>
+      </div>
+    </form>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
